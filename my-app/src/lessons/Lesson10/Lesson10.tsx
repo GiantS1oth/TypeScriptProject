@@ -50,8 +50,8 @@ console.log(getCatFact);
       <Button name={'GET MORE INFO'} onClick={getCatFact}/>
     </ButtonContainer>
 
-    <FactsBlock isHideBlock={!facts.length}>{loading && <LoaderContainer><Loader /></LoaderContainer>}{catFacts}</FactsBlock>
-    
+    <FactsBlock isHideBlock={!facts.length}>{catFacts}</FactsBlock>
+    {loading && <LoaderContainer><Loader /></LoaderContainer>}
     <ButtonContainer>
       
     <Button name={'DELETE ALL FACTS'} onClick={deleteAllFacts} />
